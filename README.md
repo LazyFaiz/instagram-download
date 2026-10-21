@@ -16,15 +16,15 @@
 1. 打开 `chrome://extensions`。
 2. 开启“开发者模式”。
 3. 点击“加载已解压的扩展程序”。
-4. 选择本仓库中的 `extension-fixed` 目录。
+4. 选择本仓库中的 `extension` 目录。
 5. 刷新 Instagram 页面。
 
 ## 项目结构
 
-- `extension-fixed/`：Chrome 扩展源码。
-- `extension-fixed/content-scripts/`：页面解析、按钮注入和媒体数据桥接。
-- `extension-fixed/popup.*`：扩展设置弹窗。
-- `extension-fixed/_locales/`：扩展名称和描述的多语言文件。
+- `extension/`：Chrome 扩展源码。
+- `extension/content-scripts/`：页面解析、按钮注入和媒体数据桥接。
+- `extension/popup.*`：扩展设置弹窗。
+- `extension/_locales/`：扩展名称和描述的多语言文件。
 
 ## 说明
 
