@@ -1,6 +1,6 @@
 # Instagram Downloader
 
-基于原 Instagram 下载扩展修复的 Chrome Manifest V3 版本，当前版本为 `1.1.0`。
+基于原 Instagram 下载扩展修复的 Chrome Manifest V3 版本，当前版本为 `1.0.0`。
 
 ## 功能
 
