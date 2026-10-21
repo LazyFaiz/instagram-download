@@ -1,0 +1,38 @@
+{
+   "action": {
+      "default_popup": "popup.html",
+      "default_title": "Extension Popup"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "css": [ "content-scripts/dom.css" ],
+      "js": [ "content-scripts/dom.js" ],
+      "matches": [ "*://*.instagram.com/*" ]
+   }, {
+      "js": [ "content-scripts/story-bridge.js" ],
+      "matches": [ "*://*.instagram.com/*" ],
+      "run_at": "document_start",
+      "world": "MAIN"
+   }, {
+      "js": [ "content-scripts/parse.js" ],
+      "matches": [ "*://*.instagram.com/*" ],
+      "run_at": "document_start",
+      "world": "MAIN"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_extDescription__",
+   "host_permissions": [ "*://*.instagram.com/*", "*://*.cdninstagram.com/*" ],
+   "icons": {
+      "128": "icon/128.png",
+      "16": "icon/16.png",
+      "32": "icon/32.png",
+      "48": "icon/48.png",
+      "96": "icon/96.png"
+   },
+   "manifest_version": 3,
+   "name": "__MSG_extName__",
+   "permissions": [ "activeTab", "storage", "downloads", "tabs" ],
+   "version": "1.1.0"
+}

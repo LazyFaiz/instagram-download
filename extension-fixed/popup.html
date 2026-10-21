@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram 下载器</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="popup">
+    <header>
+      <h1>Instagram 下载器</h1>
+      <p>下载设置</p>
+    </header>
+
+    <label class="setting">
+      <span>
+        <strong>始终显示下载按钮</strong>
+        <small>关闭后仅在鼠标移入时显示</small>
+      </span>
+      <input id="button-mode" type="checkbox">
+    </label>
+
+    <label class="setting">
+      <span>
+        <strong>启用子文件夹</strong>
+        <small>按用户名、日期或类型归类</small>
+      </span>
+      <input id="enable-subfolders" type="checkbox">
+    </label>
+
+    <label class="setting setting-stack">
+      <span>
+        <strong>子文件夹方式</strong>
+      </span>
+      <select id="subfolder-mode">
+        <option value="username">按用户名</option>
+        <option value="date">按日期（YYYY-MM）</option>
+        <option value="type">按类型（图片/视频）</option>
+        <option value="none">不使用子文件夹</option>
+      </select>
+    </label>
+
+    <p id="status" role="status" aria-live="polite"></p>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
